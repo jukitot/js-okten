@@ -27,3 +27,18 @@ console.log(typeof strText);
 
 let numText = 34;
 console.log(typeof numText);
+
+let boolText = true;
+console.log(typeof boolText);
+
+
+// concat
+let str1 = 'Hello';
+console.log(str1);
+let str2 = 'World';
+console.log(str2);
+let str3 = 'OP';
+
+
+console.log(str1 + ' ' + str2 + ' ' + str3);
+console.log(`${str1} brave new ${str2} ${str3}`);
