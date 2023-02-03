@@ -72,4 +72,11 @@ console.log(res);
 console.log(10 === 10);
 console.log(10 !== 10);
 console.log(10 !== '10');
-console.log(10 == '10');
+console.log(10 === '10');
+
+console.log('hello' === 'hello');
+console.log('hell' > 'hello');
+console.log('hell' < 'hello');
+
+console.log(typeof (22 + ' ')); //string
+
