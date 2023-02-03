@@ -79,4 +79,57 @@ console.log('hell' > 'hello');
 console.log('hell' < 'hello');
 
 console.log(typeof (22 + ' ')); //string
+console.log(100 + 200 + 'hello');
+console.log('hello' + 100 + 200);
+console.log(typeof +'12');
+console.log(parseInt('12dpsdpkl'));
+console.log(!!10);
+console.log(!!0);
+console.log(!!'');
+console.log(!!NaN);
+let obj = {
+    name: 'Vasya',
+    age: 33
+}
+console.log(obj);
+
+let arr = [1, 2, 3, 4, obj];
+console.log(arr);
+
+console.log(typeof obj);
+console.log(typeof arr);
+
+let undef = undefined;
+console.log(undef);
+console.log(typeof undef);
+
+let nan = NaN;
+console.log(nan);
+console.log(typeof nan);
+
+let nul = null;
+console.log(nul);
+console.log(typeof nul);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
