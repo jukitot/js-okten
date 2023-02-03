@@ -60,4 +60,16 @@ console.log(0.1 + 0.2);
 let big = BigInt(900909090900909);
 console.log(big);
 
+let aTr = true;
+console.log(typeof aTr);
 
+let bFl = false;
+console.log(typeof bFl);
+
+let res = 5 > 7;
+console.log(res);
+
+console.log(10 === 10);
+console.log(10 !== 10);
+console.log(10 !== '10');
+console.log(10 == '10');
