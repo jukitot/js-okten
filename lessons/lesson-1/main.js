@@ -42,3 +42,22 @@ let str3 = 'OP';
 
 console.log(str1 + ' ' + str2 + ' ' + str3);
 console.log(`${str1} brave new ${str2} ${str3}`);
+
+//number
+let num = 20;
+console.log(num);
+
+let num1 = 30;
+console.log(num1);
+
+console.log(num + num1);
+console.log(num - num1);
+console.log(num * num1);
+console.log(num / num1);
+console.log(num % num1);
+console.log(0.1 + 0.2);
+
+let big = BigInt(900909090900909);
+console.log(big);
+
+
