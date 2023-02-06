@@ -43,10 +43,25 @@ let user1Age = 23;
 let user = {
     username: 'kokos',
     age: 23,
-    status: true
+    status: true,
+    skills: ['java', 'js', 'html'],
+    wife: {
+        username: 'anna',
+        age: 21
+    }
 }
 
 console.log(user);
+console.log(user.username);
+console.log(user.age);
+console.log(user.status);
+console.log(user.skills);
+console.log(user.skills[2]);;
+
+console.log(user['username']);//аналог к user.username
+
+console.log(user.wife);
+console.log(user.wife.username);
 
 
 
