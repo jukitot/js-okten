@@ -67,52 +67,52 @@ console.log(book6);
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 //
 let users = [
-    user1 = {
+    {
         name: 'Yura',
         username: 'goodboy',
         password: '03930480dkj'
     },
-    user2 = {
+    {
         name: 'Max',
         username: 'badboy',
         password: '039cggd0dkj'
     },
-    user3 = {
+    {
         name: 'Oleg',
         username: 'peacelife',
         password: '024dfds480dkj'
     },
-    user4 = {
+    {
         name: 'Anna',
         username: 'itwasgood',
         password: '04646fgfww33'
     },
-    user5 = {
+    {
         name: 'Sasha',
         username: 'imagoodperson',
         password: '0332234333ddkj'
     },
-    user6 = {
+    {
         name: 'Dima',
         username: 'imaginedragon',
         password: '0232gd0dkj'
     },
-    user7 = {
+    {
         name: 'Anastasia',
         username: 'jukitot',
         password: '456676d480dkj'
     },
-    user8 = {
+    {
         name: 'Bogdan',
         username: 'nosuicide',
         password: '0dfg5gd0dkj'
     },
-    user9 = {
+    {
         name: 'Anton',
         username: 'ilovemylife',
         password: '03930456gj'
     },
-    user10 = {
+    {
         name: 'Andrey',
         username: 'xxfuur',
         password: '03fdfggd0dkj'
@@ -266,7 +266,8 @@ if (num1 > num2) {
     console.log('these numbers are the same ');
 } else {
     console.log('you need to enter 2 numbers, try again!');
-}1
+}
+1
 
 //
 //     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
