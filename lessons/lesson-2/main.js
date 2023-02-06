@@ -33,3 +33,31 @@ console.log(names);
 
 console.log(typeof names);
 console.log(Array.isArray(names));
+
+
+//objects
+
+let user1Name = 'kokos';
+let user1Age = 23;
+
+let user = {
+    username: 'kokos',
+    age: 23,
+    status: true
+}
+
+console.log(user);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
