@@ -276,6 +276,11 @@ if (num1 > num2) {
 // let x1 = false ? 'default' : 200;
 // console.log(x1);
 
+
+let x5 = '';
+let res = x5 || 'hello';
+console.log(res);
+
 //
 //     - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
 let coursesAndDurationArray = [
