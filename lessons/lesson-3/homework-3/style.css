@@ -1,0 +1,17 @@
+.product-card {
+    text-align: center;
+    background: lightcyan;
+}
+
+.product-title {
+    font-size: 30px;
+    background: aquamarine;
+    text-align: center;
+}
+
+.product-image {
+    width: 200px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
