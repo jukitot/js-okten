@@ -78,3 +78,16 @@ function tax (sum) {
 
 let number = tax(10000);
 console.log(number);
+
+
+function userFilter(users) {
+    let filteredUsers = [];
+    for (const user of users) {
+        if (user.age > 30){
+            filteredUsers.push(user);
+        }
+    }
+    return filteredUsers;
+}
+let filter = userFilter(users);
+console.log(filter);
