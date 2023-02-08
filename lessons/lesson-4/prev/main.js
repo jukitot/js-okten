@@ -71,11 +71,9 @@ console.log(r1, r2);
 function percentage(sum, per) {
     return sum / 100 * per;
 }
+
 function tax (sum) {
-    let pdv = percentage(sum, 20);
-    let warTax = percentage(sum, 1.5);
-    let result = sum - pdv - warTax;
-    return result;
+    return  sum - percentage(sum, 20) - percentage(sum, 1.5);
 }
 
 let number = tax(10000);
