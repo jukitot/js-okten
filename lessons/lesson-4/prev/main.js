@@ -91,3 +91,64 @@ function userFilter(users) {
 }
 let filter = userFilter(users);
 console.log(filter);
+
+//arguments
+
+function foobar() {
+    console.log(arguments);
+    if (arguments.length === 2){
+        return arguments[0] + arguments[1];
+    }else if(arguments.length === 3){
+        return arguments[0] + arguments[1] + arguments[2];
+    }
+}
+console.log(foobar(1, 2));
+console.log(foobar(1, 2, 3));
+// rest argument
+function asd(y,z,...x){
+    console.log(x);
+    console.log(Array.isArray(x));
+}
+
+asd(1, 2, 3, 4, 5, true);
+
+//замикання
+function ast() {
+    let x = 10;
+    function inner() {
+        return ++x;
+    }
+    return inner;
+}
+
+let foo = ast();
+console.log(foo());
+
+let user = {name: 'slekl', age: 123};
+
+user.age = -12002;
+
+function userBuilder(name, age) {
+    let user = {name, age};
+    return {
+        getName() {
+            return user.name;
+        },
+        getAge() {
+            return user.age;
+        },
+        setAge() {
+            if (age > 0) {
+                user.age = age;
+            }
+        }
+    }
+}
+
+let builder = userBuilder('vasya', 123);
+console.log(builder);
+
+console.log(builder.getAge());
+console.log(builder.getName());
+builder.setAge(-100);
+console.log(builder.getAge());
