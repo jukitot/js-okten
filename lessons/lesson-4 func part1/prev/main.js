@@ -9,7 +9,7 @@ function writer (productTitle, price, descr) {
 
 writer('milk', 23, 'some milk');
 writer('meat', 150, 'a bit a meat')
-
+////
 
 function printerArray (array){
     for (const item of array) {
