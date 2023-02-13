@@ -65,3 +65,22 @@ console.log(innerArray);
 
 //callback
 
+function foo1(callback) {
+    console.log(callback());
+}
+
+
+foo1(function () {
+    return 100;
+});
+
+function calc1(a, b, callback) {
+    return callback(a, b);
+
+}
+
+console.log(calc1(10, 20, (a, b) => {
+    return a + b;
+}));
+
+console.log(calc1(15, 20, (a, b) => a - b));
