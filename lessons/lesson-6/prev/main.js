@@ -136,6 +136,7 @@ console.log(filteredUsers);
 let filteredUsers1 = users.filter(value => value.age > 30);
 console.log(filteredUsers1);
 
+//map
 
 let mapedUsers = users.map(function (value, index){
 
@@ -163,3 +164,49 @@ let mapedUsers3 = users.map(function (value, index){
     return {...value, id: index+1}
 } );
 console.log(mapedUsers3);
+
+let mapedUsers4 = users.map((value, index) => ({...value, id: index + 1}));
+console.log(mapedUsers4);
+
+//find
+console.log(users.find(value => value.name === 'max'));
+
+//every
+console.log(users.every(value => value.status));
+//some
+console.log(users.some(value => value.status));
+
+//sort
+let sortUsers = users.sort((user1, user2) => {
+    return user1.age - user2.age;
+});
+console.log(sortUsers);
+
+// console.log(users.sort((user1, user2) => {
+//     return user2.age - user1.age;
+// }));
+
+let nameSort = users.sort((a, b) => {
+    if (a.name > b.name) {
+        return 1;
+    }
+    if (a.name < b.name) {
+        return -1;
+    }
+    if (a.name === b.name) {
+        return 0;
+    }
+});
+console.log(nameSort);
+
+//reduce
+
+let reduce = users.reduce((accumulator, user) => {
+    if(user.status === true){
+        accumulator.statT.push(user);
+    }else{
+        accumulator.statF.push(user)
+    }
+    return accumulator;
+}, {statT:[], statF:[]});
+console.log(reduce);
