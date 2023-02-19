@@ -103,3 +103,63 @@ console.log(concat);
 
 console.log(concat.includes(11));
 console.log('hello okten'.includes('ok'));
+
+
+let users = [
+    {name: 'vasya', age: 31, status: false},
+    {name: 'petya', age: 30, status: true},
+    {name: 'kolya', age: 29, status: true},
+    {name: 'olya', age: 28, status: false},
+    {name: 'max', age: 30, status: true},
+    {name: 'anya', age: 31, status: false},
+    {name: 'oleg', age: 28, status: false},
+    {name: 'andrey', age: 29, status: true},
+    {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false},
+    {name: 'max', age: 31, status: true}
+];
+//forEach
+users.forEach(function (value, index){
+    console.log(value, index);
+});
+
+users.forEach(value => console.log(value))
+
+
+//filter
+console.log('--------------');
+let filteredUsers = users.filter(function (value){
+    return value.age > 30;
+});
+console.log(filteredUsers);
+
+let filteredUsers1 = users.filter(value => value.age > 30);
+console.log(filteredUsers1);
+
+
+let mapedUsers = users.map(function (value, index){
+
+    let newUser = {
+        name: value.name,
+        age: value.age,
+        status: value.status,
+        id: index + 1
+    }
+    return newUser;
+} );
+console.log(mapedUsers);
+
+let mapedUsers1 = users.map(function (value, index){
+    return {
+        name: value.name,
+        age: value.age,
+        status: value.status,
+        id: index + 1
+    }
+} );
+console.log(mapedUsers1);
+
+let mapedUsers3 = users.map(function (value, index){
+    return {...value, id: index+1}
+} );
+console.log(mapedUsers3);
