@@ -31,3 +31,35 @@ console.log(user);
 
 //errors
 
+console.log('start');
+try {
+    console.log('try block');
+}catch (e) {
+    console.log(e)
+}finally {
+    console.log('finally block');
+}
+console.log('end');
+
+function calc(a, b){
+    if (b === 0){
+        throw new Error('b is 0');
+    }
+    return a / b;
+}
+//?.
+calc(10, 2);
+
+let user1 = {
+    name: { }
+};
+user1?.name?.fn;
+
+//destruct
+let name = 'vasya';
+let age = 23;
+let user2 = {
+    name,
+    age
+}
+console.log(user2);
