@@ -56,10 +56,36 @@ let user1 = {
 user1?.name?.fn;
 
 //destruct
-let name = 'vasya';
-let age = 23;
-let user2 = {
-    name,
-    age
+// let name = 'vasya';
+// let age = 23;
+// let user2 = {
+//     name,
+//     age,
+//     foo(){
+//         console.log(this);
+//     }
+// }
+// console.log(user2);
+// user2.foo();
+
+
+let user3 = {
+    name: 'vasya',
+    age: 33,
+    foo(){
+        console.log('foo');
+    },
+};
+
+let {age,name, foo} = user3;
+console.log(name);
+console.log(age);
+foo();
+
+console.log(user3.name);
+
+function asd({name}){
+    console.log(name);
 }
-console.log(user2);
+
+asd({a:'skdjksj', name:'skjdkjs,dfd,kj'});
