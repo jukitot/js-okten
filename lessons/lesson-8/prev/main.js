@@ -121,4 +121,18 @@
 //prototypes of objects
 
 
+let user = {
+    id: 1,
+    name: 'kokos'
+};
+let user2p = Object.create(user);
+console.log(user2p === user);
+console.log(user2p);
+console.log(user2p.id);
+console.log(user2p.name);
 
+console.log(user2p.hasOwnProperty('id'));
+console.log(user2p.hasOwnProperty('name'));
+user2p.surname = 'foobar';
+console.log(user2p.hasOwnProperty('surname'));
+console.log(user2p);
