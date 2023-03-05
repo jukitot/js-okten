@@ -37,10 +37,16 @@ function User(name, age){
     this.age = age;
 }
 
-console.log(User);
+
+
 User.prototype.greeting = function () {
     return `hello my name is ${this.name}`;
 };
 
 let user = new User('vasya', 123);
+console.log(user);
 console.log(user.greeting());
+
+let user2 = new User('olya', 23);
+console.log(user2);
+console.log(user2.greeting());
