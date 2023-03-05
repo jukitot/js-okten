@@ -32,10 +32,10 @@
 
 
 //prototype call apply bind
-function User(name, age){
-    this.name = name;
-    this.age = age;
-}
+// function User(name, age){
+//     this.name = name;
+//     this.age = age;
+// }
 //
 // User.prototype.greeting = function () {
 //     return `hello my name is ${this.name}`;
@@ -48,19 +48,61 @@ function User(name, age){
 // let user2 = new User('olya', 23);
 // console.log(user2);
 // console.log(user2.greeting());
+//
+// let user = new User('vasya', 123);
+// user.greeting = function (msg) {
+//     return `${msg} my name is ${this.name} `;
+// };
+//
+// console.log(user.greeting('hello'));
+// let user2 = new User('olya', 23);
+// // console.log(user.greeting.apply(user2, ['hi'])); //user2.greeting()
+// console.log(user.greeting.call(user2, 'hi'));
+//
+// let greetingCopy = user.greeting.bind(user2, 'hey');
+// console.log(greetingCopy());
 
-let user = new User('vasya', 123);
-user.greeting = function (msg) {
-    return `${msg} my name is ${this.name} `;
-};
+//classes and extends
 
-console.log(user.greeting('hello'));
-let user2 = new User('olya', 23);
-// console.log(user.greeting.apply(user2, ['hi'])); //user2.greeting()
-console.log(user.greeting.call(user2, 'hi'));
-
-let greetingCopy = user.greeting.bind(user2, 'hey');
-console.log(greetingCopy());
-
-//classes
+// class User {
+//
+//
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     // static greeting() {
+//     //     console.log(this);
+//     //     return `hello my name is ${this.name}`
+//     // }
+//
+//      greeting() {
+//         console.log(this);
+//         return `hello my name is ${this.name}`
+//     }
+//
+//     work() {
+//         return `work in process`;
+//     }
+//
+//
+// }
+//
+// // let user = new User('vasya', 31);
+// // console.log(user);
+// // console.log(User.greeting());
+//
+// class Customer extends User{
+//     constructor(name, age, password) {
+//         super(name, age);
+//         this.password = password;
+//     }
+//     work() {
+//         return super.work();
+//     }
+// }
+//
+// let customer = new Customer('vasya', 31, '1111');
+// console.log(customer);
+// console.log(customer.work());
 
