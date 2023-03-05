@@ -117,3 +117,10 @@ for (const user of users) {
 
     document.body.appendChild(userInfoDiv);
 }
+
+//recursion
+function explorer(htmlElement) {
+
+}
+
+explorer(document.body);
