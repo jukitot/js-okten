@@ -36,17 +36,31 @@ function User(name, age){
     this.name = name;
     this.age = age;
 }
-
-
-
-User.prototype.greeting = function () {
-    return `hello my name is ${this.name}`;
-};
+//
+// User.prototype.greeting = function () {
+//     return `hello my name is ${this.name}`;
+// };
+//
+// let user = new User('vasya', 123);
+// console.log(user);
+// console.log(user.greeting());
+//
+// let user2 = new User('olya', 23);
+// console.log(user2);
+// console.log(user2.greeting());
 
 let user = new User('vasya', 123);
-console.log(user);
-console.log(user.greeting());
+user.greeting = function (msg) {
+    return `${msg} my name is ${this.name} `;
+};
 
+console.log(user.greeting('hello'));
 let user2 = new User('olya', 23);
-console.log(user2);
-console.log(user2.greeting());
+// console.log(user.greeting.apply(user2, ['hi'])); //user2.greeting()
+console.log(user.greeting.call(user2, 'hi'));
+
+let greetingCopy = user.greeting.bind(user2, 'hey');
+console.log(greetingCopy());
+
+//classes
+
