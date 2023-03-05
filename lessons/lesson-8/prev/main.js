@@ -1,3 +1,5 @@
+//constructions
+
 // function User(name, age, status) {
 //     this.name = name;
 //     this.age = age;
@@ -27,6 +29,8 @@
 // let user = new User('mkk', 122, true, 'kjkj', 22);
 // console.log(user);
 // user.greeting();
+
+
 //prototype call apply bind
 function User(name, age){
     this.name = name;
