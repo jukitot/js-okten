@@ -106,3 +106,19 @@
 // console.log(customer);
 // console.log(customer.work());
 
+// function User(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
+//
+// function Customer(name, age, password) {
+//     User.apply(this, arguments);
+//     this.password = password;
+// }
+// let customer = new Customer('vasya', 31, '1111');
+// console.log(customer);
+
+//prototypes of objects
+
+
+
