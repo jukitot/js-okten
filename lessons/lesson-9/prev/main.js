@@ -120,7 +120,13 @@ for (const user of users) {
 
 //recursion
 function explorer(htmlElement) {
-
+    console.log('current position', htmlElement);
+    let children = htmlElement.children;
+    if(children.length !== 0) {
+        for (const child of children) {
+            console.log('inner element', child);
+        }
+    }
 }
 
 explorer(document.body);
