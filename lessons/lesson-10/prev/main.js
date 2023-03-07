@@ -103,3 +103,4 @@ console.log(parse);
 parse.push({});
 console.log(parse);
 localStorage.setItem('users', JSON.stringify(parse));
+//example
